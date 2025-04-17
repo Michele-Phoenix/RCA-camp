@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Planet</title>
+    <style>
+        body {
+    font-family: 'Times New Roman', serif;
+    background: #f5f5f5;
+    color: #1d0101;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #0b011d;
+    color: rgb(208, 142, 221);
+    padding: 5px 0;
+    border-bottom: 5px solid rgb(138, 98, 170);
+}
+
+header img {
+    width: 25%;
+    border-radius: 5px;
+}
+
+header:hover {
+    transform: translateY(0);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+article img {
+    width: 80%;
+    border-radius: 5px;
+    transition: transform 1s ease;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+.sidebar {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    transform: rotate(0deg);
+}
+
+footer {
+    background: #020c0a;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    transform: translateY(5px);
+    transition: transform 0.5s ease;
+}
+
+footer:hover {
+    transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="TheDaily.png" alt="The Daily">
+        <h1>THE DAILY PLANET</h1>
+        <p>NEWS FROM ALL CORNERS OF THE WORLD | March 11, 2025</p>
+    </header>
+
+    <div class="container">
+        <section class="news">
+            <article style="grid-column: span 1;">
+                <h2>President Trump to return to The White House</h2>
+                <img src="Donaldo.png" alt="Trump News">
+                <p>Former President Donald Trump is set to return to the White House after securing victory in one of the most contested elections in U.S. history.  With a campaign fueled by populist rhetoric, economic promises, and strong party loyalty, Trump has once again captured the presidency, marking his second non-consecutive term—something only achieved once before by Grover Cleveland in the late 19th century. With a campaign fueled by populist rhetoric, economic promises, and strong party loyalty, Trump has once again captured the presidency, marking his second non-consecutive term—something only achieved once before by Grover Cleveland in the late 19th century. With a campaign fueled by populist rhetoric, economic promises, and strong party loyalty, Trump has once again captured the presidency, marking his second non-consecutive term—something only achieved once before by Grover Cleveland in the late 19th century.</p>
+            </article>
+
+            <article style="grid-column: span 1;">
+                <h2>Celtics & Warriors: A Rivalry Reignited?</h2>
+                <img src="Curry.png" alt="Curry News"><br><br><br><br><br>
+                <p>As Boston and Golden State continue their battle for NBA dominance, fans wonder if another Finals matchup is on the horizon. With both teams sitting near the top of their respective conferences, fans are once again debating: Could we see another NBA Finals showdown between these powerhouses?
+                    The Boston Celtics have been nothing short of dominant this season. 
+                    With Jayson Tatum and Jaylen Brown leading the charge, Boston boasts one of the best records in the league. 
+                    Their elite defense, anchored by Kristaps Porziņģis and Jrue Holiday, has been a nightmare for opposing teams.
+                    
+                    Out West, the Golden State Warriors are navigating a challenging season, but Stephen Curry continues to shine. At 36 years old, Curry is still putting up MVP-caliber numbers, keeping the Warriors competitive in a tough Western Conference.
+                    What do you think? Will we see a Celtics-Warriors Finals again? Let us know! </p>
+            </article>
+    
+            <article style="grid-column: span 2;">
+                <h2>Scientists Unveil Breakthrough in Time Travel</h2>
+                <p>Physicists at MIT have made a groundbreaking discovery, sparking excitement and controversy across the scientific community. The discovery, which involves manipulating space-time in ways previously thought impossible, has sparked excitement and controversy across the scientific community.In a stunning breakthrough that could change the course of history, a team of physicists at the MIT(Massachussets Institute of Technology) has announced a major advancement in time travel technology.
+                    The discovery, which involves manipulating space-time in ways previously thought impossible, has sparked excitement and controversy across the scientific community.In a stunning breakthrough that could change the course of history, a team of physicists at the MIT(Massachussets Institute of Technology) has announced a major advancement in time travel technology.
+                    The discovery, which involves manipulating space-time in ways previously thought impossible, has sparked excitement and controversy across the scientific community.</p>
+            </article>
+            
+            <article style="grid-column: span 2;">
+            <h3>Latest Headlines</h3>
+            <ul>
+                <li>Blake Lively and Justin Baldoni feud: Explained</li>
+                <br><br><br>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/-RRHKVWUqLw" title="YouTube video" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br><br>
+                <li>New Movie Breaks Box Office Records</li>
+                <br><br><br>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/1pHDWnXmK7Y" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </ul>
+        </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Daily Planet. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
